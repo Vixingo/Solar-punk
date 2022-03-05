@@ -3,5 +3,19 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Spartan", sans-serif;
+}
+h1,
+h2,
+h3 {
     font-family: "Vollkorn", serif;
+}
+.nav-link {
+    color: unset !important;
+    font-size: 16px;
+    transition: 0.2s ease-out;
+    font-weight: 600;
+}
+.nav-link:hover {
+    text-shadow: 0 0 7px #4ca148, 0 0 10px #4ca148, 0 0 21px #4ca148,
+        0 0 42px #4ca148, 0 0 82px #4ca148, 0 0 92px #4ca148;
 }

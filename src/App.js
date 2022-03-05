@@ -22,8 +22,8 @@ function App() {
                         borderRadius: "0",
                     }}
                 >
-                    <Navbar check={isDarkTheme} change={changeTheme} />
                     <BrowserRouter>
+                        <Navbar check={isDarkTheme} change={changeTheme} />{" "}
                         <Routes>
                             <Route path="/" element={<Landing />} />
                             <Route path="*" element={<Notfound />} />
