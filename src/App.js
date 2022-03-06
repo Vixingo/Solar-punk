@@ -9,21 +9,23 @@ import { light, dark } from "./Theme/Theme";
 import { Paper } from "@mui/material";
 
 function App() {
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+    // const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-    const changeTheme = () => {
-        setIsDarkTheme(!isDarkTheme);
-    };
+    // const changeTheme = () => {
+    //     setIsDarkTheme(!isDarkTheme);
+    // };
     return (
         <>
-            <ThemeProvider theme={isDarkTheme ? dark : light}>
+            {/* {isDarkTheme ? dark : light} */}
+            <ThemeProvider theme={dark}>
                 <Paper
                     sx={{
                         borderRadius: "0",
                     }}
                 >
                     <BrowserRouter>
-                        <Navbar check={isDarkTheme} change={changeTheme} />{" "}
+                        <Navbar />
+                        {/* check={isDarkTheme} change={changeTheme}  */}
                         <Routes>
                             <Route path="/" element={<Landing />} />
                             <Route path="*" element={<Notfound />} />

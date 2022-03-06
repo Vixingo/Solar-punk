@@ -3,7 +3,8 @@ import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { Button, Typography, Box } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import { ThemeProvider } from "@mui/material";
+import { useTheme } from "@emotion/react";
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
     height: 34,
@@ -55,20 +56,15 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 function Navbar({ check, change }) {
     return (
         <>
-            <MaterialUISwitch sx={{ m: 1 }} checked={check} onChange={change} />
-            <Typography color={"primary"}>Hello world</Typography>
-            <h1>hello world</h1>
-            <h2>hello world</h2>
-            <h3>hello world</h3>
-            <h4>hello world</h4>
-            <h5>hello world</h5>
-            <h6>hello world</h6>
-            <h1>hello world</h1>
-            <section className="Navbar my-4">
+            <section className="Navbar py-2">
                 <nav className="navbar navbar-expand-lg navbar-dark ">
                     <div className="container">
                         <Link className="navbar-brand" to="/">
-                            <img src="../img/logo.png" alt="" width={"100%"} />
+                            <img
+                                src="../img/LOGOLight.png"
+                                alt=""
+                                width={"80px"}
+                            />
                         </Link>
                         <button
                             className="navbar-toggler"
@@ -111,9 +107,10 @@ function Navbar({ check, change }) {
                                         {" "}
                                         <Button
                                             sx={{
-                                                color: "#fff",
-                                                backgroundColor: "#4CA148",
-                                                fontFamily: "Rajdhani",
+                                                color: "",
+                                                backgroundColor:
+                                                    "secondary.main",
+                                                fontFamily: "Spartan",
                                                 width: "133px",
                                                 height: "38px",
                                                 fontWeight: "700",
@@ -129,6 +126,13 @@ function Navbar({ check, change }) {
                                         </Button>
                                     </Link>
                                 </li>
+                                {/* <li className="nav-item">
+                                    <MaterialUISwitch
+                                        sx={{ m: 1 }}
+                                        checked={check}
+                                        onChange={change}
+                                    />
+                                </li> */}
                             </ul>
                         </div>
                     </div>

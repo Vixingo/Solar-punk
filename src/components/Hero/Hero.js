@@ -4,7 +4,9 @@ import React from "react";
 function Hero() {
     return (
         <>
-            <Typography color={"primary"}>Hello World</Typography>
+            <Typography color={"primary"} sx={{ background: "background" }}>
+                Hello World
+            </Typography>
         </>
     );
 }
