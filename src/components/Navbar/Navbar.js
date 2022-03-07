@@ -86,7 +86,7 @@ function Navbar({ check, change }) {
                                     <Link
                                         className="nav-link "
                                         aria-current="page"
-                                        to="#"
+                                        to="/"
                                     >
                                         HOME
                                     </Link>
@@ -94,6 +94,16 @@ function Navbar({ check, change }) {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="#">
                                         ROADMAP
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="#">
+                                        COMMUINITY
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="#">
+                                        GALLERY
                                     </Link>
                                 </li>
                                 <li className="nav-item">
@@ -107,14 +117,15 @@ function Navbar({ check, change }) {
                                         {" "}
                                         <Button
                                             sx={{
-                                                color: "",
+                                                color: "#fff",
                                                 backgroundColor:
                                                     "secondary.main",
                                                 fontFamily: "Spartan",
                                                 width: "133px",
                                                 height: "38px",
-                                                fontWeight: "700",
+                                                fontWeight: "600",
                                                 borderRadius: "8px",
+                                                fontSize: "14px",
                                                 ":hover": {
                                                     color: "#4CA148",
                                                     backgroundColor: "#fff",
@@ -122,7 +133,7 @@ function Navbar({ check, change }) {
                                                 },
                                             }}
                                         >
-                                            CONNECT
+                                            Connect
                                         </Button>
                                     </Link>
                                 </li>
